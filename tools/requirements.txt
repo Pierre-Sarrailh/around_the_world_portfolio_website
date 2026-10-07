@@ -1,0 +1,12 @@
+# Asset pipeline for the face scan. Used by the scripts in tools/, never by the
+# website itself — the browser only ever sees what lands in public/.
+numpy>=2.1
+pillow>=11.0        # texture resizing, format conversion
+trimesh>=4.5        # read/inspect .obj/.ply/.glb scan output
+scipy>=1.14         # nearest-surface queries for --fill nearest
+
+# Ray casting backends. Without embreex the bake falls back to a pure-Python
+# intersector and a 2048px texture takes minutes instead of seconds; rtree is
+# what that fallback needs in order to run at all.
+embreex>=2.17
+rtree>=1.3

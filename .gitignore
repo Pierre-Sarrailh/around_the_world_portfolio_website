@@ -1,0 +1,45 @@
+# ---- Node / Vite ----
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---- Python (asset pipeline in tools/) ----
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# ---- Editors / OS ----
+.DS_Store
+.AppleDouble
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+
+# ---- 3D source assets ----
+# Raw scan output and working files are large and do not belong in git.
+# Commit only the optimised, web-ready assets under public/.
+assets-raw/
+*.blend
+*.blend[0-9]*
+*.ply
+*.obj
+*.fbx
+*.zip
+
+# Large web assets: uncomment if these grow past a few MB and you move
+# them to Git LFS or a CDN instead.
+# public/models/*.glb
+# public/textures/*.ktx2
+
+# ---- Env ----
+.env
+.env.*
+!.env.example
