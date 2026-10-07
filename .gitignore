@@ -8,13 +8,6 @@ npm-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# ---- Python (asset pipeline in tools/) ----
-.venv/
-venv/
-__pycache__/
-*.py[cod]
-.ipynb_checkpoints/
-
 # ---- Editors / OS ----
 .DS_Store
 .AppleDouble
@@ -34,12 +27,6 @@ assets-raw/
 *.fbx
 *.zip
 
-# Large web assets: uncomment if these grow past a few MB and you move
-# them to Git LFS or a CDN instead.
-# public/models/*.glb
-# public/textures/*.ktx2
-
 # ---- Env ----
 .env
 .env.*
-!.env.example
